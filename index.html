@@ -5,16 +5,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<!-- LAZY LINE PAINTER -->
-		<script type="text/javascript" src="lib/lazylinepainter/jquery.lazylinepainter-1.7.0.min.js"></script>
-		<script src="lib/lazylinepainter/raphael-min.js"></script>  
-		<script type="text/javascript" src="lib/lazylinepainter/draw-pc.js"></script>
-	<!-- END - LAZY LINE PAINTER -->
-	<script src="js/script.js"></script>
+	
+
+
+	
+
+
 	<link rel="stylesheet" type="text/css" media="all" href="css/vendors/plugins.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+
+	<link href="lib/bootstrap-material-design/css/roboto.min.css" rel="stylesheet">
+    <link href="lib/bootstrap-material-design/css/material.min.css" rel="stylesheet">
+    <link href="lib/bootstrap-material-design/css/ripples.min.css" rel="stylesheet">
 </head>
 <body>
 	<div class="bg-web"></div>
@@ -27,7 +29,7 @@
 			</div>
 			
 			<ul id="myNavbar" class="nav nav-pills nav-stacked nav-body">
-				<li class="active"> <a href="#section-1"><i class="glyphicon glyphicon-user"></i><div class="hidden-sm hidden-xs">Profile</div></a></li>
+				<li><a href="#section-1" class="active"><i class="glyphicon glyphicon-user"></i><div class="hidden-sm hidden-xs">Profile</div></a></li>
 				<li><a href="#section-2"><i class="glyphicon glyphicon-education"></i><div class="hidden-sm hidden-xs">Education</div></a></li>
 				<li><a href="#section-3"><i class="glyphicon glyphicon-backward"></i><div class="hidden-sm hidden-xs">Experience</div></a></li>
 				<li><a href="#section-4"><i class="glyphicon glyphicon-pencil"></i><div class="hidden-sm hidden-xs">Projects</div></a></li>
@@ -41,12 +43,18 @@
 				<div class="wrapper-web">
 					<!--<img src="img/my-photo.png" alt="">-->
 					<div id='draw-pc'></div>
-					<div id="my-info1" class="my-info fade-in is-paused" style="display:none;">
+					<div id="my-info" class="my-info fade-in is-paused" style="display:none;">
 						<h2>sergio Antonio</h2>
 						<h2><i class="glyphicon glyphicon-baby-formula"></i> 29 years old</h2>
 						<h2><i class="glyphicon glyphicon-earphone"></i> 818 310 8524</h2>
 						<h2><i class="glyphicon glyphicon-map-marker"></i> Burbank, CA</h2>
 						<h2><i class="glyphicon glyphicon-envelope"></i> sergio.mantonio@gmail.com</h2>
+					</div>
+					<div class="footer-profile">
+						<h1>web designer &&  front-end</h1>
+						<div class="fotter-profile__img">
+							<img src="img/pontos.png" alt="">
+						</div>
 					</div>
 				</div>	
 			</section>
@@ -55,7 +63,7 @@
 					<h1>Education</h1>
 				</header>
 				<div class="wrapper-web">
-					<article>
+					<article class="jumbotron">
 						<img src="img/epral.png" alt="">
 						<h2>Escola Profissional da Região Alentejo</h2>
 						<h3 class="h3-web">www.epral.pt</h3>
@@ -65,7 +73,7 @@
 						<h3><i class="glyphicon glyphicon-minus"></i> It was taught various programs that highlight the most important.</h3>
 						<h3><i class="glyphicon glyphicon-minus"></i> Since then I have been always related to this universe.</h3>
 					</article>
-					<article>
+					<article class="jumbotron">
 						<img src="img/frenetikpolis.png" alt="">
 						<h2>FRENETIKPOLIS</h2>
 						<h3 class="h3-web">www.frenetikpolis.pt</h3>
@@ -73,7 +81,7 @@
 						<h3><i class="glyphicon glyphicon-map-marker"></i> Lisbon - Portugal</h3>
 						<h3><i class="glyphicon glyphicon-minus"></i> I did training in 2014 to improve knowledge in the 3D area.</h3>
 					</article>
-					<article>
+					<article class="jumbotron">
 						<img src="img/youtube.png" alt="">
 						<h2>YOUTUBE</h2>
 						<h3 class="h3-web">www.youtube.com</h3>
@@ -192,36 +200,36 @@
 			</section>
 		</div>
 	</div>
-	<script>
-		var sections = $('section')
-		  , nav = $('ul.nav-pills li')
-		  , nav_height = nav.outerHeight();
-		 
-		$(window).on('scroll', function () {
-		  var cur_pos = $(this).scrollTop();
-		 
-		  sections.each(function() {
-		    var top = $(this).offset().top - nav_height,
-		        bottom = top + $(this).outerHeight();
-		 
-		    if (cur_pos >= top && cur_pos <= bottom) {
-		      $('ul.nav-pills li.active').removeClass('active');
-		      
-		 
-		      var test = $(this).addClass('active');
-		     return console.log(test);
-		    }
-		  });
-		});
-	</script>
-<script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	<!-- LAZY LINE PAINTER -->
+		<script type="text/javascript" src="lib/lazylinepainter/jquery.lazylinepainter-1.7.0.min.js"></script>
+		<script src="lib/lazylinepainter/raphael-min.js"></script>  
+		<script type="text/javascript" src="lib/lazylinepainter/draw-pc.js"></script>
+	<!-- END - LAZY LINE PAINTER -->
+
+
+	<!--MATERIAL DESIGNER-->
+		<script src="lib/bootstrap-material-design/js/ripples.min.js"></script>
+		<script src="lib/bootstrap-material-design/js/material.min.js"></script>
+	<!--END - MATERIAL DESIGNER-->
+
+
+<script>   
+
+// SCROLL ANIMATION AND CLICK BUTTON ACTIVE 
+
 $(document).ready(function(){
   // Add scrollspy to <body>
   $('body').scrollspy({target: ".navbar", offset: 50});   
 
   // Add smooth scrolling on all links inside the navbar
   $("#myNavbar a").on('click', function(event) {
-
+  		$('ul.nav-pills a.active').removeClass('active');
+    	$(this).parent('a').addClass('active')
     // Prevent default anchor click behavior
     event.preventDefault();
 
@@ -236,6 +244,7 @@ $(document).ready(function(){
    
       // Add hash (#) to URL when done scrolling (default click behavior)
       window.location.hash = hash;
+       
     });
   });
 });

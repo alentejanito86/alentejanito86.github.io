@@ -58,19 +58,18 @@ html > body {
   height: 100%;
   min-width: 100%;
   font-family: 'Cutive Mono';
-  overflow-y: scroll;
 }
-/* line 12, ../sass/base/_base.scss */
+/* line 11, ../sass/base/_base.scss */
 html > body h1 {
   font-family: 'Anonymous Pro' !important;
 }
-/* line 15, ../sass/base/_base.scss */
+/* line 14, ../sass/base/_base.scss */
 html > body h2, html > body h3, html > body h4, html > body h5, html > body h6 {
   font-family: 'Cutive Mono' !important;
   font-weight: bold;
   font-weight: 500px;
 }
-/* line 21, ../sass/base/_base.scss */
+/* line 20, ../sass/base/_base.scss */
 html > body > .bg-web {
   min-width: 100%;
   position: fixed;
@@ -81,11 +80,11 @@ html > body > .bg-web {
   background-size: cover;
   /*filter: blur(2px);*/
 }
-/* line 32, ../sass/base/_base.scss */
+/* line 31, ../sass/base/_base.scss */
 html > body .screen-landscape {
   display: none;
 }
-/* line 36, ../sass/base/_base.scss */
+/* line 35, ../sass/base/_base.scss */
 html > body .container-web {
   margin-left: -15px;
   margin-right: -15px;
@@ -118,14 +117,14 @@ html > body .container-web:after {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 36, ../sass/base/_base.scss */
+  /* line 35, ../sass/base/_base.scss */
   html > body .container-web {
     float: left;
     width: 100%;
   }
 }
 @media (max-width: 991px) and (orientation: landscape) {
-  /* line 60, ../sass/base/_base.scss */
+  /* line 59, ../sass/base/_base.scss */
   html > body > .screen-landscape {
     display: block;
     position: relative;
@@ -135,15 +134,15 @@ html > body .container-web:after {
     margin: 0 auto 0 auto;
     padding-top: 20%;
   }
-  /* line 69, ../sass/base/_base.scss */
+  /* line 68, ../sass/base/_base.scss */
   html > body > .screen-landscape > h1 {
     font-size: 2em;
   }
-  /* line 72, ../sass/base/_base.scss */
+  /* line 71, ../sass/base/_base.scss */
   html > body > .screen-landscape > h2 {
     font-size: 1.5em;
   }
-  /* line 77, ../sass/base/_base.scss */
+  /* line 76, ../sass/base/_base.scss */
   html > body > .container-web {
     display: none;
   }

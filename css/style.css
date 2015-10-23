@@ -71,7 +71,7 @@ html > body h2, html > body h3, html > body h4, html > body h5, html > body h6 {
 /* line 19, ../sass/base/_base.scss */
 html > body > .bg-web {
   min-width: 100%;
-  position: fixed;
+  position: static;
   z-index: 1;
   background-attachment: fixed;
   background-repeat: no-repeat;

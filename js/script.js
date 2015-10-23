@@ -30,10 +30,13 @@ $(function() {
 $(".my-menu").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', drawnPc());
     
 /*NAV MOBILE ALL*/
-$(".my-menu").on('swiperight', function() {
-  alert("You swiped!");
-});
 
+
+$(document).on("pagecreate",".my-menu",function(){
+  $(".my-menu").on("swipeleft",function(){
+    alert("You swiped left!");
+  });                       
+});
 
 
 

@@ -31,7 +31,7 @@ $(".my-menu").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimatione
     
 /*NAV MOBILE ALL*/
 $(".my-menu").on('swiperight', function() {
-  $(".my-menu").css({"width":"250px"});
+  alert("You swiped!");
 });
 
 

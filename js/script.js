@@ -1,4 +1,8 @@
-$(function() {
+
+
+/*ATIVAR AUTOMATICAMENTE OS BOTOES DO NAV CONFORME ESTEJAM ATIVADOS*/
+
+$(function() { 
 
   var links = $("#myNavbar a");
   $(window).scroll(function() {
@@ -21,6 +25,21 @@ $(function() {
 
   })
 });
+
+/*ENTRADA DO NAV*/
+$(".my-menu").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', drawnPc());
+    
+/*NAV MOBILE ALL*/
+$(".my-menu").on('swiperight', function() {
+  $(".my-menu").css({"width":"250px"});
+});
+
+
+
+
+
+
+
 /*
 $(document).ready(function() {
 

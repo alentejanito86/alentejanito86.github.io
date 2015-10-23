@@ -6,29 +6,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	
-
-
-	
-
-
-	<link rel="stylesheet" type="text/css" media="all" href="css/vendors/plugins.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
-
-	<link href="lib/bootstrap-material-design/css/roboto.min.css" rel="stylesheet">
-    <link href="lib/bootstrap-material-design/css/material.min.css" rel="stylesheet">
-    <link href="lib/bootstrap-material-design/css/ripples.min.css" rel="stylesheet">
+	<!--BOOTSTRAP-->
+		<link rel="stylesheet" type="text/css" media="all" href="css/vendors/plugins.css" />
+	<!--END - BOOTSTRAP-->
+	<!--ANIMATE.CSS-->
+		<link rel="stylesheet" href="lib/animate.css/animate.css">
+	<!--END - ANIMATE.CSS-->
+	<!--MATERIAL DESIGN-->
+		<link href="lib/bootstrap-material-design/css/roboto.min.css" rel="stylesheet">
+	    <link href="lib/bootstrap-material-design/css/material.min.css" rel="stylesheet">
+	    <link href="lib/bootstrap-material-design/css/ripples.min.css" rel="stylesheet">
+    <!--END - MATERIAL DESIGN-->
 </head>
 <body>
 	<div class="bg-web"></div>
+	<div class="screen-landscape">
+		<h1>Don't permited view this website on londscape.</h1>
+		<h2>Plase change phone orientation to view website</h2>
+	</div>
 	<div class="container-web">
-		<header class="my-menu">
+		<header class="my-menu animated bounceInLeft">
 			<div class="nav-logo ">
 				<h1>SERGIO</h1>
 				<h1>ANTONIO</h1>
 				<h2>WEB DESIGNER</h2>
 			</div>
 			
-			<ul id="myNavbar" class="nav nav-pills nav-stacked nav-body">
+			<ul id="myNavbar" class="nav nav-pills nav-stacked nav-body btn-smooth">
 				<li><a href="#section-1" class="active"><i class="glyphicon glyphicon-user"></i><div class="hidden-sm hidden-xs">Profile</div></a></li>
 				<li><a href="#section-2"><i class="glyphicon glyphicon-education"></i><div class="hidden-sm hidden-xs">Education</div></a></li>
 				<li><a href="#section-3"><i class="glyphicon glyphicon-backward"></i><div class="hidden-sm hidden-xs">Experience</div></a></li>
@@ -50,10 +55,10 @@
 						<h2><i class="glyphicon glyphicon-map-marker"></i> Burbank, CA</h2>
 						<h2><i class="glyphicon glyphicon-envelope"></i> sergio.mantonio@gmail.com</h2>
 					</div>
-					<div class="footer-profile">
+					<div id="footer-profile" class="footer-profile fade-in is-paused" style="display: none;">
 						<h1>web designer &&  front-end</h1>
 						<div class="fotter-profile__img">
-							<img src="img/pontos.png" alt="">
+							<a href="#section-2" class="btn-smooth"><img src="img/pontos.png" alt=""></a>
 						</div>
 					</div>
 				</div>	
@@ -204,7 +209,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
+	
 	<!-- LAZY LINE PAINTER -->
 		<script type="text/javascript" src="lib/lazylinepainter/jquery.lazylinepainter-1.7.0.min.js"></script>
 		<script src="lib/lazylinepainter/raphael-min.js"></script>  
@@ -216,18 +221,17 @@
 		<script src="lib/bootstrap-material-design/js/ripples.min.js"></script>
 		<script src="lib/bootstrap-material-design/js/material.min.js"></script>
 	<!--END - MATERIAL DESIGNER-->
-
+	<script src="js/script.js"></script>
 
 <script>   
 
 // SCROLL ANIMATION AND CLICK BUTTON ACTIVE 
 
 $(document).ready(function(){
-  // Add scrollspy to <body>
-  $('body').scrollspy({target: ".navbar", offset: 50});   
+ 
 
   // Add smooth scrolling on all links inside the navbar
-  $("#myNavbar a").on('click', function(event) {
+  $(".btn-smooth a").on('click', function(event) {
   		$('ul.nav-pills a.active').removeClass('active');
     	$(this).parent('a').addClass('active')
     // Prevent default anchor click behavior

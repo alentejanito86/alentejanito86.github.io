@@ -32,11 +32,7 @@ $(".my-menu").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimatione
 /*NAV MOBILE ALL*/
 
 
-$(document).on("pagecreate","#pageone",function(){
-  $(h2).on("swipeleft",function(){
-    alert("You swiped left!");
-  });                       
-});
+
 
 
 

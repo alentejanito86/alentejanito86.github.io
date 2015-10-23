@@ -18,6 +18,15 @@
 	    <link href="lib/bootstrap-material-design/css/material.min.css" rel="stylesheet">
 	    <link href="lib/bootstrap-material-design/css/ripples.min.css" rel="stylesheet">
     <!--END - MATERIAL DESIGN-->
+
+	<script>
+		$(document).on("pagecreate","#pageone",function(){
+  $(h2).on("swipeleft",function(){
+    alert("You swiped left!");
+  });                       
+});
+	</script>
+
 </head>
 <body>
 	<div class="bg-web"></div>
@@ -25,8 +34,8 @@
 		<h1>Don't permited view this website on londscape.</h1>
 		<h2>Plase change phone orientation to view website</h2>
 	</div>
-	<div class="container-web">
-		<header data-role="page" id="pageone" class="my-menu animated bounceInLeft">
+	<div class="container-web" data-role="page" id="pageone">
+		<header class="my-menu animated bounceInLeft">
 			<div class="nav-logo ">
 				<h1>SERGIO</h1>
 				<h1>ANTONIO</h1>

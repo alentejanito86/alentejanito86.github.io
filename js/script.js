@@ -33,7 +33,7 @@ $(".my-menu").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimatione
 
 
 $(document).on("pagecreate","#pageone",function(){
-  $(".my-menu").on("swipeleft",function(){
+  $(h2).on("swipeleft",function(){
     alert("You swiped left!");
   });                       
 });

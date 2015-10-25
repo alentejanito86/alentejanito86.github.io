@@ -272,7 +272,7 @@ body > container > row > .nav-content {
   position: fixed;
   padding: 0;
   background-color: #b3b3b3;
-  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0);
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.4);
   z-index: 4;
 }
 @media (min-width: 992px) {
@@ -329,31 +329,46 @@ body > container > row > .nav-content {
   display: flex;
   flex-direction: initial;
 }
+/* line 158, ../sass/layout/_nav.scss */
+.my-menu > .nav-content > .nav-content__mobile > li {
+  width: calc(100%/5);
+  width: -webkit-calc(100%/5);
+  width: -moz-calc(100%/5);
+  width: -o-calc(100%/5);
+  border-right: 1px solid #CBCED0;
+}
+/* line 168, ../sass/layout/_nav.scss */
+.my-menu > .nav-content > .nav-content__mobile > li a {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  padding-top: 15px;
+  justify-content: center;
+  height: 50px;
+}
 @media (min-width: 992px) {
   /* line 152, ../sass/layout/_nav.scss */
   .my-menu > .nav-content > .nav-content__mobile {
     flex-direction: column;
   }
-}
-/* line 162, ../sass/layout/_nav.scss */
-.my-menu > .nav-content > .nav-content__mobile a {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  cursor: pointer;
-  text-align: left;
-  padding-left: 30%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  /*justify-content: center;*/
-  align-items: center;
-  text-decoration: none;
-  color: #337ab7;
-}
-/* line 176, ../sass/layout/_nav.scss */
-.my-menu > .nav-content > .nav-content__mobile a i {
-  padding-right: 15px;
+  /* line 186, ../sass/layout/_nav.scss */
+  .my-menu > .nav-content > .nav-content__mobile > li {
+    width: 100%!important;
+    border: none;
+  }
+  /* line 190, ../sass/layout/_nav.scss */
+  .my-menu > .nav-content > .nav-content__mobile > li > a {
+    justify-content: flex-start;
+    padding-left: 25%;
+    padding-bottom: 15px;
+    width: 100%;
+    text-align: left;
+  }
+  /* line 197, ../sass/layout/_nav.scss */
+  .my-menu > .nav-content > .nav-content__mobile > li > a > i {
+    padding-right: 15px;
+  }
 }
 
 /*}*/

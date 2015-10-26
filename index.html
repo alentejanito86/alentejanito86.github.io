@@ -9,9 +9,6 @@
 	<link rel="stylesheet" type="text/css" media="all" href="css/vendors/plugins.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
 
-	<!--<link href="lib/bootstrap-material-design/css/roboto.min.css" rel="stylesheet">
-    <link href="lib/bootstrap-material-design/css/material.min.css" rel="stylesheet">
-    <link href="lib/bootstrap-material-design/css/ripples.min.css" rel="stylesheet">-->
 </head>
 <body>
 	<div class="bg-web"></div>
@@ -49,7 +46,7 @@
 					</div>
 					<div class="footer-profile fade-in is-paused" style="display:none;">
 						<h1>web designer &&  front-end</h1>
-						<div class="fotter-profile__img">
+						<div class="footer-profile__img">
 							<img src="img/pontos.png" alt="">
 						</div>
 					</div>
@@ -60,31 +57,63 @@
 					<h1>Education</h1>
 				</header>
 				<div class="wrapper-web">
-					<article class="jumbotron">
-						<img src="img/epral.png" alt="">
-						<h2>Escola Profissional da Região Alentejo</h2>
-						<h3 class="h3-web">www.epral.pt</h3>
-						<h3 class="h3-year"> 2001-2004</h3>
-						<h3><i class="glyphicon glyphicon-map-marker"></i> Estremoz - Evora - Portugal</h3>
-						<h3><i class="glyphicon glyphicon-minus"></i> Professional Technical course level III of IT and management .</h3>
-						<h3><i class="glyphicon glyphicon-minus"></i> It was taught various programs that highlight the most important.</h3>
-						<h3><i class="glyphicon glyphicon-minus"></i> Since then I have been always related to this universe.</h3>
-					</article>
-					<article class="jumbotron">
-						<img src="img/frenetikpolis.png" alt="">
-						<h2>FRENETIKPOLIS</h2>
-						<h3 class="h3-web">www.frenetikpolis.pt</h3>
-						<h3 class="h3-year"> 2014</h3>
-						<h3><i class="glyphicon glyphicon-map-marker"></i> Lisbon - Portugal</h3>
-						<h3><i class="glyphicon glyphicon-minus"></i> I did training in 2014 to improve knowledge in the 3D area.</h3>
-					</article>
-					<article class="jumbotron">
-						<img src="img/youtube.png" alt="">
-						<h2>YOUTUBE</h2>
-						<h3 class="h3-web">www.youtube.com</h3>
-						<h3><i class="glyphicon glyphicon-minus"></i> Due to lack of opportunities to attend courses, I studied and learn more in the area through video lessons available on this site.</h3>
-						<h3><i class="glyphicon glyphicon-minus"></i> It was a very important tool in my development.</h3>
-					</article>
+					<div id="educationCarousel" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#educationCarousel" data-slide-to="0" class="active"></li>
+					    <li data-target="#educationCarousel" data-slide-to="1"></li>
+					    <li data-target="#educationCarousel" data-slide-to="2"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">
+					    <div class="item active">
+					      <div class="row__carousel"></div>
+					      <div class="carousel-caption epral">
+					      	<img src="img/epral.png" alt="" >
+					        <h2>Escola Profissional da Região Alentejo</h2>
+					        <h3 class="h3-web pull-left">www.epral.pt</h3>
+					        <h3 class="h3-year"> 2001-2004</h3>
+					        <h3><i class="glyphicon glyphicon-map-marker"></i> Estremoz - Evora - Portugal</h3>
+					        <h3><i class="glyphicon glyphicon-minus"></i> Professional Technical course level III of IT and management .</h3>
+					        <h3><i class="glyphicon glyphicon-minus"></i> It was taught various programs that highlight the most important.</h3>
+					        <h3><i class="glyphicon glyphicon-minus"></i> Since then I have been always related to this universe.</h3>
+					      </div>
+					    </div>
+
+					    <div class="item">
+					      <div class="row__carousel"></div>
+					      <div class="carousel-caption frenetikpolis">
+					      	<img src="img/frenetikpolis.png" alt="" >
+					        <h2>FRENETIKPOLIS</h2>
+					        <h3 class="h3-web">www.frenetikpolis.pt</h3>
+					        <h3 class="h3-year"> 2014</h3>
+					        <h3><i class="glyphicon glyphicon-map-marker"></i> Lisbon - Portugal</h3>
+					        <h3><i class="glyphicon glyphicon-minus"></i> I did training in 2014 to improve knowledge in the 3D area.</h3>
+					      </div>
+					    </div>
+
+					    <div class="item">
+					      <div class="row__carousel"></div>
+					      <div class="carousel-caption youtube">
+					      	<img src="img/youtube.png" alt="" >
+					        <h2>YOUTUBE</h2>
+					        <h3 class="h3-web">www.youtube.com</h3>
+					        <h3><i class="glyphicon glyphicon-minus"></i> Due to lack of opportunities to attend courses, I studied and learn more in the area through video lessons available on this site.</h3>
+					        <h3><i class="glyphicon glyphicon-minus"></i> It was a very important tool in my development.</h3>
+					      </div>
+					    </div>
+
+					  <!-- Left and right controls -->
+					  <a class="left carousel-control" href="#educationCarousel" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#educationCarousel" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
 				</div>
 			</section>
 			<section id="section-3" class="experience">
@@ -92,44 +121,97 @@
 					<h1>Experience</h1>
 				</header>
 				<div class="wrapper-web">
-					<article>
-						<img src="img/dbyart.png" alt="" >
-						<h2>Design By Art</h2>
-						<h3 class="h3-web">2013-2015</h3>
-						<h3>Responsible for the creation, development and maintenance of web sites, as well as its structure and plan.</h3>
-						<h3>It was a very rewarding and profitable experience with all the knowledge acquired, achievements and successes.</h3>
-						<h3>I was able through creativity and the digital platform open new horizons to my customers resulting in their own success.</h3>
-					</article>
-					<article>
-						<img src="img/biago-media.png" alt="">
-						<h2>Biago Media</h2>
-						<h3 class="h3-web">2014-2015</h3>
-						<h3>For about one year I’ve worked remotely with this company, having as main role, design functions.</h3>
-						<h3>Developed logos, banners, rotators, edited and processed and images.</h3>
-						<h3>Contributing decisively for the success of so many esteemed clients.</h3>
-					</article>
-					<article>
-						<img src="img/gnr.png" alt="">
-						<h2>Police Forces</h2>
-						<h3 class="h3-web">2010-2015</h3>
-						<h3>Durante este tempo que trabalhei como policia adquiri um serie de caracteristicas que fortaleceram a minha forma de estar na vida. </h3>
-						<h3>O grande trabalho de equipa que é necessário para desenvolver aquelas funções.</h3>
-						<h3>Pontaluidade, responsabilidade, liderança foram outras das caracteristicas que desenvolvi. </h3>
-					</article>
-					<article>
-						<img src="img/isn.png" alt="">
-						<h2>Lifeguard</h2>
-						<h3 class="h3-web">2007-2009</h3>
-						<h3> Um serviço gratificante que desenvolvi com grande orgulho.</h3>
-						<h3>Como forma de agradecimento pelo serviço que ali desenvolvi, foi-me atribuido pelo comandante uma referência elugiosa.</h3>
-					</article>
-					<article>
-						<img src="img/marinha.png" alt>
-						<h2>Military Navy</h2>
-						<h3 class="h3-web">2005-2010</h3>
-						<h3> Com a especialidade de comunicações estava inerente ao meu serviço a transmissão e recepção de todas as comunicações entre os navios e as unidades em terra.</h3>
-						<h3>Recebi um louvor atribuido pelo Sr. Almirante pelo serviço que ali desenvolvi. </h3>
-					</article>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					  <div class="panel panel-default">
+					    <div class="panel-heading" role="tab" id="headingOne">
+					      <h4 class="panel-title">
+					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					          Design By Art
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					      <div class="panel-body">
+					        <img src="img/dbyar.png" alt="" >
+							<h3 class="h3-web">2013-2015</h3>
+							<h3>Responsible for the creation, development and maintenance of web sites, as well as its structure and plan.</h3>
+							<h3>It was a very rewarding and profitable experience with all the knowledge acquired, achievements and successes.</h3>
+							<h3>I was able through creativity and the digital platform open new horizons to my customers resulting in their own success.</h3>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading" role="tab" id="headingTwo">
+					      <h4 class="panel-title">
+					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					          Biago Media
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+					      <div class="panel-body">
+					        <img src="img/biago-media.png" alt="">
+							<h3 class="h3-web">2014-2015</h3>
+							<h3>For about one year I’ve worked remotely with this company, having as main role, design functions.</h3>
+							<h3>Developed logos, banners, rotators, edited and processed and images.</h3>
+							<h3>Contributing decisively for the success of so many esteemed clients.</h3>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading" role="tab" id="headingThree">
+					      <h4 class="panel-title">
+					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					          Police Forces
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					      <div class="panel-body">
+					        <img src="img/gnr.png" alt="">
+							<h3 class="h3-web">2010-2015</h3>
+							<h3>Durante este tempo que trabalhei como policia adquiri um serie de caracteristicas que fortaleceram a minha forma de estar na vida. </h3>
+							<h3>O grande trabalho de equipa que é necessário para desenvolver aquelas funções.</h3>
+							<h3>Pontaluidade, responsabilidade, liderança foram outras das caracteristicas que desenvolvi. </h3>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading" role="tab" id="headingThree">
+					      <h4 class="panel-title">
+					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					          Lifeguard
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					      <div class="panel-body">
+					        <img src="img/isn.png" alt="">
+							<h2>Lifeguard</h2>
+							<h3 class="h3-web">2007-2009</h3>
+							<h3> Um serviço gratificante que desenvolvi com grande orgulho.</h3>
+							<h3>Como forma de agradecimento pelo serviço que ali desenvolvi, foi-me atribuido pelo comandante uma referência elugiosa.</h3>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading" role="tab" id="headingThree">
+					      <h4 class="panel-title">
+					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					          Military Navy
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					      <div class="panel-body">
+					        <img src="img/marinha.png" alt>
+							<h3 class="h3-web">2005-2010</h3>
+							<h3> Com a especialidade de comunicações estava inerente ao meu serviço a transmissão e recepção de todas as comunicações entre os navios e as unidades em terra.</h3>
+							<h3>Recebi um louvor atribuido pelo Sr. Almirante pelo serviço que ali desenvolvi. </h3>
+					      </div>
+					    </div>
+					  </div>
+					</div>
 				</div>
 			</section>
 			<section id="section-4" class="projects">
@@ -209,13 +291,6 @@
 		<script type="text/javascript" src="lib/lazylinepainter/draw-pc.js"></script>
 	<!-- END - LAZY LINE PAINTER -->
 
-
-	<!--MATERIAL DESIGNER-->
-		<script src="lib/bootstrap-material-design/js/ripples.min.js"></script>
-		<script src="lib/bootstrap-material-design/js/material.min.js"></script>
-	<!--END - MATERIAL DESIGNER-->
-
-
 <script>   
 
 // SCROLL ANIMATION AND CLICK BUTTON ACTIVE 
@@ -244,7 +319,13 @@ $(document).ready(function(){
       window.location.hash = hash;
        
     });
+
+    $("#educationCarousel").carousel("pause");
+    $('.collapse').collapse()
   });
+
+
+  
 });
 </script>
 </body>
